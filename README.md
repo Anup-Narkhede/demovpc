@@ -35,12 +35,19 @@ From webserver, request will be sent to Database server
 User request, should not sent to Database directly (e.g. for banking application database is crucial part, we will keep it private for security purpose)
 
 So, we will be creating two subnets
+
 one subnet for webserver
+
+
 one subnet for database server.
 
+
 for one subnet, provide range 10.0.1.0/24
+
 for second subnet, provide range 10.0.1.0/24
 
+
 By default subnet are private.
+
 we want to make one subnet as public.i.e. subnet which contains webserver
 
