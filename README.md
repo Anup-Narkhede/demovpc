@@ -104,6 +104,7 @@ We can see the list of ip's which are reserved.
 10.0.0.255
 
 +++++++++++++++++++++++
+
 Note: Every subnet will be by default private.
 We want to make one subnet as public.
 To make subnet public its two step process.
@@ -136,6 +137,7 @@ This means, one default route table is create automatically, when we create our 
 
 Creating new route table
 -----------------------------------
+
 Create Route table ---> Name Tag: InternetRT  ---> VPC: MyVPC ---> Create --> Close
 
 
@@ -150,6 +152,7 @@ Select the route table ( InternetRT )  ---> Routes tab --->Edit routes --->
 Now, our Subnet is public Subnet.
 
 ++++++++++++
+
 Now, Lets launch webserver in public subnet.
 Services ---Ec2 ---- Launch instance  -- Step3  Network : MyVPC
 				          Subnet: 10.0.1.0/24
@@ -227,6 +230,7 @@ Detach RT to public subnet ( similar to above )
 
 Immediately, SSH connection is lost.
 -----
+
 Lets attach it back.
 Are we able to access the webserver from putty.
 
@@ -244,6 +248,7 @@ As the instance is in private subnet nor the internet is available, we cannot ac
 
 Deletion Process
 -------------------
+
 1) Terminate both the EC2 instances.
 2) Select myVPC  , delete VPC
 When VPC is deleted,  Internet gateways, Route tables and subnets  will also be deleted automatically.
