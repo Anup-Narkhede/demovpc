@@ -3,7 +3,7 @@
 
 ![App Screenshot](https://github.com/Anup-Narkhede/demovpc/blob/main/1_hHIxU-hhQnq5J7yz7NF37Q.png)
 
-![App Screenshot](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bogotobogo.com%2FDevOps%2FDevOps-Sys-Admin-Interview-Questions-AWS-VPC-Setup.php&psig=AOvVaw0r7Qbzpwlpa1KA82mYibfg&ust=1649529544684000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPDbiMiOhfcCFQAAAAAdAAAAABAV)
+![App Screenshot](https://www.bogotobogo.com/DevOps/images/DevOps/Interview/VPC/Public-Private-subnets-VPC.png)
 
 ## Tasks:
 
