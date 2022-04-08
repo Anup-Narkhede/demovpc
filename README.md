@@ -49,6 +49,24 @@ By default subnet are private.
 we want to make one subnet as public.i.e. subnet which contains webserver
 
 
+(We will create private network(suppose mitaoe). We will split that network into two section for different purpose(like different departments in mitaoe).
+one section will be private network i.e. database server which is not accessible for all(e.g. server room in mit) and second will be webserver i.e public network(website must be accessible all over the world).
+
+Even if we create public subnet in Virtual private cloud it doesn't have internet access. To give internet access to public subnet we will create internet gateway. But we cannot attach internet gateway directly to subnet hence we will attach it to virtual private cloud(i.e. our private network mitaoe).
+now, to make connection between public subnet and internet gateway we will create route table and attach its one end to internet gateway and other to public subnet to route traffic(route table consist of two columns col1)Target col2)Destination )
+
+now our public subnet have internet access so we can create webserver in it i.e accessible over the internet.
+
+Database Server:
+we keep our database server in private subnet(network) for security purpose e.g. banking
+database server is only attached with webserver. If database server needs version upgradation it needs internet access , to provide internet access we will create a server in public subnet known as bastion server whose one point is connected to internet gateway and other to db server 
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Practicals
 -------------------
 Select Mumbai Region.
