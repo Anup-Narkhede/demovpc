@@ -3,6 +3,8 @@
 
 ![App Screenshot](https://github.com/Anup-Narkhede/demovpc/blob/main/1_hHIxU-hhQnq5J7yz7NF37Q.png)
 
+![App Screenshot](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bogotobogo.com%2FDevOps%2FDevOps-Sys-Admin-Interview-Questions-AWS-VPC-Setup.php&psig=AOvVaw0r7Qbzpwlpa1KA82mYibfg&ust=1649529544684000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPDbiMiOhfcCFQAAAAAdAAAAABAV)
+
 ## Tasks:
 
 * Create a Virtual private cloud 
@@ -51,7 +53,9 @@ we want to make one subnet as public.i.e. subnet which contains webserver
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 (We will create private network(suppose mitaoe). We will split that network into two section for different purpose(like different departments in mitaoe).
-one section will be private network i.e. database server which is not accessible for all(e.g. server room in mit) and second will be webserver i.e public network(website must be accessible all over the world).
+one section will be private network i.e. database server which is not accessible for all(e.g. server room in mit) and second will be webserver i.e public network(website must be accessible all over the world). 
+
+We allow inbound rules for all ip addressses in security group(virtual firewall) of webserver i.e. port 80 HTTP and port 443 HTTPS
 
 Even if we create public subnet in Virtual private cloud it doesn't have internet access. To give internet access to public subnet we will create internet gateway. But we cannot attach internet gateway directly to subnet hence we will attach it to virtual private cloud(i.e. our private network mitaoe).
 now, to make connection between public subnet and internet gateway we will create route table and attach its one end to internet gateway and other to public subnet to route traffic(route table consist of two columns col1)Target col2)Destination )
