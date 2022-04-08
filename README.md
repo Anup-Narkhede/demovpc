@@ -48,6 +48,7 @@ for second subnet, provide range 10.0.1.0/24
 By default subnet are private.
 we want to make one subnet as public.i.e. subnet which contains webserver
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 (We will create private network(suppose mitaoe). We will split that network into two section for different purpose(like different departments in mitaoe).
 one section will be private network i.e. database server which is not accessible for all(e.g. server room in mit) and second will be webserver i.e public network(website must be accessible all over the world).
@@ -57,7 +58,8 @@ now, to make connection between public subnet and internet gateway we will creat
 
 now our public subnet have internet access so we can create webserver in it i.e accessible over the internet.
 
-Database Server:
+*Database Server:
+
 we keep our database server in private subnet(network) for security purpose e.g. banking
 database server is only attached with webserver. If database server needs version upgradation it needs internet access , to provide internet access we will create a server in public subnet known as bastion server whose one point is connected to internet gateway and other to db server 
 
